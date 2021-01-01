@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.AddCategoryFragment">
+
+
+
+
+    <EditText
+        android:id="@+id/edtNoteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="enter Note Name ..." />
+
+    <LinearLayout
+        android:id="@+id/SelCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNoteName"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvSelCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Category..."/>
+
+        <Spinner
+            android:id="@+id/spnCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_arrow_drop_down_24"
+            android:layout_below="@id/edtNoteName"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SelPri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SelCat"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvSelPri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Priority..."/>
+
+        <Spinner
+            android:id="@+id/spnPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_arrow_drop_down_24"
+            android:layout_below="@id/spnCategory"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SelSta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SelPri"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvSelSta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Status..."/>
+
+        <Spinner
+            android:id="@+id/spnStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_arrow_drop_down_24"
+            android:layout_below="@id/spnPriority"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tvDatePick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select plan date..."
+        android:layout_below="@id/SelSta"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDatePick"
+        android:layout_weight="1"
+        android:text="Add" />
+
+
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@id/tvDatePick"
+        android:layout_toRightOf="@id/btnAdd"
+        android:text="Close" />
+</RelativeLayout>

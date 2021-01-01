@@ -4,24 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".PriorityActivity">
+    tools:context=".CategoryActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvNote"
+        android:id="@+id/rcCategory"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="2dp">
+        android:layout_height="wrap_content">
 
     </androidx.recyclerview.widget.RecyclerView>
 
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-       android:id="@+id/add"
+        android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
         android:backgroundTint="#C121C6"
         android:src="@drawable/ic_baseline_add_circle_24" />
 
